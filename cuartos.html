@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Quiniela Familiar</title>
+<link rel="shortcut icon" type="image/x-icon" href="./style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="./style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./style/css/colors/blue.css" media="all" />
+<link rel="stylesheet" media="all" href="./style/css/prettyPhoto.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie9.css" media="all" />
+<![endif]-->
+<!-- alternate css for colors -->
+<script type="text/javascript" src="./style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="./style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="./style/js/quicksand.js"></script>
+<script type="text/javascript" src="./style/js/portfolio.js"></script>
+<script type="text/javascript" src="./style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="./style/js/scripts.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+			$("#filter a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square', autoplay_slideshow: false, overlay_gallery: false});
+		});
+</script>
+<script type='text/javascript'>
+		$(document).ready(function(){
+			
+			//set the starting bigestHeight variable
+			var biggestHeight = 0;
+			//check each of them
+			$('.grid li').each(function(){
+				//if the height of the current element is
+				//bigger then the current biggestHeight value
+				if($(this).height() > biggestHeight){
+					//update the biggestHeight with the
+					//height of the current elements
+					biggestHeight = $(this).height();
+				}
+			});
+			//when checking for biggestHeight is done set that
+			//height to all the elements
+			$('.grid li').height(biggestHeight);
+			
+		});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper"> 
+  
+  <!-- Begin Left Side -->
+  <div id="left-side">
+    <div id="logo"><a href="./index.html"><img src="./img/Cuartos.jpeg" alt="Champion2022" /></a></div>
+    
+    <!-- Begin Menu -->
+    <div id="menu" class="menu-v">
+      <ul>
+        <li><a href="./index.html" class="active">Cuartos de final</a>
+        </li>
+
+        <li><a href="./contact.html">Rankin</a></li>
+      </ul>
+    </div>
+    <!-- End Menu -->
+    
+
+    <span id="footer">&copy; 2011 Quaters Soft</span>
+    
+  </div>
+  <!-- End Left Side --> 
+  
+  <!-- Begin Container -->
+  <div id="container"> 
+	<!-- Begin Content -->
+    <div id="content"> 
+    <div id="portfolio">
+      <!-- Begin Portfolio Navigation -->
+      <ul class="filter-nav">
+      	<li><h4>Filtro:</h4></li>
+        <li class="selected-1"><a href="#" data-value="all"><h4>All</h4></a></li>
+        <li><a href="#" data-value="Bayern_München"><h4>Bayern München</h4></a></li>
+        <li><a href="#" data-value="Manchester_City"><h4>Manchester City</h4></a></li>
+        <li><a href="#" data-value="Liverpool"><h4>Liverpool</h4></a></li>
+        <li><a href="#" data-value="Real_Madrid"><h4>Real Madrid</h4></a></li>
+        <li><a href="#" data-value="Atlético_Madrid"><h4>Atlético Madrid</h4></a></li>
+      </ul> <div class="clear"></div>
+      <!-- End Portfolio Navigation --> 
+      
+      <!-- Begin Portfolio Elements -->
+      <ul id="filter" class="grid">
+        
+        <!-- Begin Image 1 -->
+        <li data-id="id-1" class="Bayern_München"> 
+        	<a href="./img/Tuempresa1.jpg" title="Pablo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio1-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Pablo</h6></a>
+        	<p>Bayern München<br>Real Madrid<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        <!-- End Image 1 -->
+        
+        <li data-id="id-2" class="Bayern_München"> 
+        	<a href="./img/Tuempresa2.jpg" title="Andy" rel="prettyPhoto[portfolio]"><img src="./img/portfolio2-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Andy</h6></a>
+        	<p>Bayern_München<br>Real Madrid<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-3" class="Manchester_City"> 
+        	<a href="./img/Tuempresa3.jpg" title="Lalo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio3-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Lalo</h6></a>
+        	<p>Manchester_City<br>Bayern München<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-4" class="Bayern_Munchen"> 
+        	<a href="./img/Tuempresa4.jpg" title="Carlos" rel="prettyPhoto[portfolio]"><img src="./img/portfolio4-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Carlos</h6></a>
+        	<p>Bayern Munchen<br>Liverpool<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-5" class="Liverpool"> 
+       	 	<a href="./img/Tuempresa5.jpg" title="Jacque" rel="prettyPhoto[portfolio]"><img src="./img/portfolio5-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Jacque</h6></a>
+        	<p>Liverpool<br> Bayern München <span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-6" class="Atlético_Madrid"> 
+       	<a href="./img/Tuempresa6.jpg" title="Carlitos" rel="prettyPhoto[portfolio]"><img src="./img/portfolio6-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Carlitos</h6></a>
+        	<p>Atletico de Madrid<br>Liverpool <span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-7" class="Manchester_City"> 
+        	<a href="./img/Tuempresa7.jpg" title="Evita" rel="prettyPhoto[portfolio]"><img src="./img/portfolio7-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Evita</h6></a>
+        	<p>Manchester_City<br>Real Madrid<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-8" class="Manchester_City"> 
+        <a href="./img/Tuempresa8.jpg" title="Verito" rel="prettyPhoto[portfolio]"><img src="./img/portfolio8-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Verito</h6></a>
+        	<p>Manchester City<br>Real Madrid<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-9" class="Real _Madrid"> 
+        	<a href="./img/Tuempresa9.jpg" title="Tata" rel="prettyPhoto[portfolio]"><img src="./img/portfolio9-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Tata</h6></a>
+        	<p>Real Madrid<br>Liverpool<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-10" class="Bayern_München"> 
+        	<a href="./img/Tuempresa10.jpg" title="Caro" rel="prettyPhoto[portfolio]"><img src="./img/portfolio10-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Caro</h6></a>
+        	<p>Bayern München<br>Real _Madrid <span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-11" class="Bayern_München"> 
+        	<a href="./img/Tuempresa11.jpg" title="Majo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio11-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Majo</h6></a>
+        	<p>Bayern München<br>Manchester City<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-12" class="Manchester_City"> 
+        	<a href="./img/Tuempresa12.jpg" title="Georgina" rel="prettyPhoto[portfolio]"><img src="./img/portfolio12-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Georgina</h6></a>
+        	<p>Manchester City<br>Bayern München<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-13" class="Manchester_City"> 
+        	<a href="./img/Tuempresa13.jpg" title="Eduardo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio13-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Eduardo</h6></a>
+        	<p>Manchester City<br>Real Madrid<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-14" class="Liverpool"> 
+        	<a href="./img/Tuempresa14.jpg" title="Ricardo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio14-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Ricardo</h6></a>
+        	<p>Liverpool<br>Bayern München<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-15" class="Real_Madrid"> 
+        	<a href="./img/Tuempresa15.jpg" title="Barbara" rel="prettyPhoto[portfolio]"><img src="./img/portfolio15-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Barbara</h6></a>
+        	<p>Real Madrid<br>Bayern München<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-16" class="Comercio"> 
+        	<a href="./img/Tuempresa16.jpg" title="Arturo" rel="prettyPhoto[portfolio]"><img src="./img/portfolio16-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Arturo</h6></a>
+        	<p>Real <br> <span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+
+        <li data-id="id-15" class="Real_Madrid"> 
+        	<a href="./img/Tuempresa16.jpg" title="Sofia" rel="prettyPhoto[portfolio]"><img src="./img/portfolio16-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Business Card</h6></a>
+        	<p>Real <br>Bayern München<span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+        <li data-id="id-16" class="Comercio"> 
+        	<a href="./img/Tuempresa6.jpg" title="Elliott" rel="prettyPhoto[portfolio]"><img src="./img/portfolio16-th.jpg" alt="" /></a> 
+        	<a href="./index.html" title="Champions 2022  Francia"><h6>Business Card</h6></a>
+        	<p>Real <br> <span><a href="./index.html" title="Champions 2022  Francia">&raquo;</a></span></p>
+        	
+        </li>
+        
+
+
+      </ul>
+      <!-- End Portfolio Elements -->
+    </div>   
+    </div>
+    <!-- End Content --> 
+  </div>
+  <!-- End Container -->
+
+</div>
+<div class="clear"></div>
+<!-- End Wrapper -->
+<!-- Demo Only -->
+<script type="text/javascript" src="./switcher/switchstylesheet.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+	$(".changecolor").switchstylesheet( { seperator:"color"} );
+});
+</script>
+
+</body>
+</html>

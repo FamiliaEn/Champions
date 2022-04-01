@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Rankin</title>
+<link rel="shortcut icon" type="image/x-icon" href="./style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="./style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./contact/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./style/css/colors/blue.css" media="all" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="./style/css/ie9.css" media="all" />
+<![endif]-->
+<!-- alternate css for colors -->
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/blue.css" title="blue-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/brown.css" title="brown-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/green.css" title="green-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/gray.css" title="gray-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/purple.css" title="purple-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/pink.css" title="pink-color" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="./style/css/colors/red.css" title="red-color" media="screen" />
+<script type="text/javascript" src="./style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="./style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="./style/js/scripts.js"></script>
+<script type="text/javascript">  
+        
+Hola1
+		
+$(document).ready(function() {
+	
+	Hola2
+	
+	
+    $("#ajax-contact-form").submit(function() {
+        $('#load').append('<center><img src="http://themes.iki-bir.com/dropholio/ajax-loader.gif" alt="Currently Loading" id="loading"></center>');
+
+        var fem = $(this).serialize(),
+			note = $('#note');
+	
+        $.ajax({
+            type: "POST",
+            url: "contact.php",
+            data: fem,
+            success: function(msg) {
+				if ( note.height() ) {			
+					note.slideUp(500, function() { $(this).hide(); });
+				} 
+				else note.hide();
+
+				$('#loading').fadeOut(300, function() {
+					$(this).remove();
+
+					// Message Sent? Show the 'Thank You' message and hide the form
+					result = (msg === 'OK') ? '<div class="success">Your message has been sent. Thank you!</div>' : msg;
+
+					var i = setInterval(function() {
+						if ( !note.is(':visible') ) {
+							note.html(result).slideDown(500);
+							clearInterval(i);
+						}
+					}, 40);    
+				}); // end loading image fadeOut
+            }
+        });
+
+        return false;
+    });
+});
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body class="page">
+<!-- Begin Wrapper -->
+<div id="wrapper"> 
+  
+  <!-- Begin Left Side -->
+  <div id="left-side">
+    <div id="logo"><a href="./index.html"><img src="./img/champions-league.jpg" alt="Champion2022" /></a></div>
+     
+    <!-- Begin Menu -->
+    <div id="menu" class="menu-v">
+       <ul>
+            <li><a href="./index.html" class="active">Cuartos de final</a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- End Menu -->
+    
+
+    <span id="footer">&copy; 2022 Quaters Soft</span>
+    
+  </div>
+  <!-- End Left Side --> 
+  
+  <!-- Begin Container -->
+  <div id="container"> 
+	<!-- Begin Content -->
+    <div id="content" class="page-with-sidebar"> 
+    
+      <!-- Begin Left -->
+      <div id="drop">
+      	<h1>Resultados de Quiniela</h1>
+      	
+      	<p>Recuento de puntos por partido.</p>
+ 
+
+
+ <br /><br />
+
+  
+ 
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=307 style='border-collapse:
+ collapse;width:231pt'>
+<!--StartFragment-->
+ <col width=88 style='mso-width-source:userset;mso-width-alt:3218;width:66pt'>
+ <col width=114 style='mso-width-source:userset;mso-width-alt:4169;width:86pt'>
+ <col width=105 style='mso-width-source:userset;mso-width-alt:3840;width:79pt'>
+ <tr height=35 style='height:26.25pt'>
+  <td height=35 class=xl66 width=88 style='height:26.25pt;width:66pt;
+  font-size:20.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #5B9BD5;
+  border-right:.5pt solid #5B9BD5;border-bottom:1.0pt solid #5B9BD5;border-left:
+  .5pt solid #5B9BD5;background:#AEAAAA;mso-pattern:black none'>LUGAR</td>
+  <td class=xl66 width=114 style='width:86pt;font-size:20.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid #5B9BD5;
+  border-right:.5pt solid #5B9BD5;border-bottom:1.0pt solid #5B9BD5;border-left:
+  .5pt solid #5B9BD5;background:#AEAAAA;mso-pattern:black none'>NOMBRE</td>
+  <td class=xl66 width=105 style='width:79pt;font-size:20.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid #5B9BD5;
+  border-right:.5pt solid #5B9BD5;border-bottom:1.0pt solid #5B9BD5;border-left:
+  .5pt solid #5B9BD5;background:#AEAAAA;mso-pattern:black none'>PUNTOS</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>1</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Pablo<span style='mso-spacerun:yes'>�</span></td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>29</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>2</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Andy</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>25</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>3</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Caro<span style='mso-spacerun:yes'>�</span></td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>25</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>4</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Evita</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>17</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>5</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Eduardo</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>16</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>6</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Verito</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>15</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>7</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Carlos<span style='mso-spacerun:yes'>�</span></td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>11</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>8</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Majo</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>11</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>9</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Lalo</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>10</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Jacque</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>11</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Carlitos</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>12</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Georgina</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>13</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Ricardo</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>14</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Barbara<span
+  style='mso-spacerun:yes'>�</span></td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>15</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Sofia</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>16</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Elliott</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;
+  background:#DDEBF7;mso-pattern:#DDEBF7 none'>17</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>Arturo</td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5;background:#DDEBF7;
+  mso-pattern:#DDEBF7 none'>1</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl65 align=right style='height:18.75pt;font-size:14.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>18</td>
+  <td class=xl65 style='font-size:14.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>Tata<span
+  style='mso-spacerun:yes'>�</span></td>
+  <td class=xl65 align=right style='font-size:14.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border:.5pt solid #5B9BD5'>0</td>
+ </tr>
+<!--EndFragment-->
+</table>
+
+
+
+
+
+
+
+
+      </div>
+      <!-- End Left -->
+      
+      <!-- Begin Sidebar -->
+      <div id="right-side">
+      
+      <div class="right-box">
+      <h4>Reglas</h4>
+      <p>Entrada 			$100<br />
+
+ 
+        <table border=0 cellpadding=0 cellspacing=0 width=304 style='border-collapse:
+        collapse;width:229pt'>
+       <!--StartFragment-->
+        <col width=238 style='mso-width-source:userset;mso-width-alt:8704;width:179pt'>
+        <col width=66 style='mso-width-source:userset;mso-width-alt:2413;width:50pt'>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl69 width=238 style='height:15.0pt;width:179pt;
+         font-size:11.0pt;color:white;font-weight:700;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext;
+         background:#4472C4;mso-pattern:#4472C4 none'>Regla</td>
+         <td class=xl70 width=66 style='border-left:none;width:50pt;font-size:11.0pt;
+         color:white;font-weight:700;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext;
+         background:#4472C4;mso-pattern:#4472C4 none'>Puntos</td>
+        </tr>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl65 style='height:15.0pt;border-top:none;font-size:11.0pt;
+         color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'><span
+         style='mso-spacerun:yes'></span>Punto por Goles Local</td>
+         <td class=xl66 align=right style='border-top:none;border-left:none;
+         font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>1</td>
+        </tr>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl65 style='height:15.0pt;border-top:none;font-size:11.0pt;
+         color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'><span
+         style='mso-spacerun:yes'></span>Punto por Goles Visita</td>
+         <td class=xl66 align=right style='border-top:none;border-left:none;
+         font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>1</td>
+        </tr>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl65 style='height:15.0pt;border-top:none;font-size:11.0pt;
+         color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>Puntos
+         por acertar<span style='mso-spacerun:yes'> </span>Ganador/Empate</td>
+         <td class=xl66 align=right style='border-top:none;border-left:none;
+         font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>1</td>
+        </tr>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl65 style='height:15.0pt;border-top:none;font-size:11.0pt;
+         color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>Sub-Campeón</td>
+         <td class=xl66 align=right style='border-top:none;border-left:none;
+         font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>6</td>
+        </tr>
+        <tr height=20 style='height:15.0pt'>
+         <td height=20 class=xl67 style='height:15.0pt;border-top:none;font-size:11.0pt;
+         color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+         text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>Campeón</td>
+         <td class=xl68 align=right style='border-top:none;border-left:none;
+         font-size:11.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+         none;text-line-through:none;font-family:Calibri, sans-serif;border:.5pt solid windowtext'>10</td>
+        </tr>
+       <!--EndFragment-->
+       </table> 
+
+
+	  </div>
+	  
+	  <div class="right-box">
+	  <h4>Campeón</h4>
+	  <div class="map">
+	  <iframe width="320" height="224" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./img/Copa.PNG"></iframe></div>
+	  </div>
+	  
+	  
+	  
+      
+      <!-- End Sidebar -->
+       
+    </div>
+    <!-- End Content --> 
+  </div>
+  <!-- End Container -->
+
+</div>
+<div class="clear"></div>
+<!-- End Wrapper -->
+<!-- Demo Only -->
+<script type="text/javascript" src="./switcher/switchstylesheet.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+	$(".changecolor").switchstylesheet( { seperator:"color"} );
+});
+</script>
+
+</div>
+</body>
+</html>
