@@ -316,6 +316,7 @@ pre {
 	text-align: center;
 }
 
+
 .controls {
 	margin-top: 20px;
 	overflow: hidden;
@@ -1170,6 +1171,15 @@ h1.title a:hover {
 	margin: 0;
 	padding: 0;
 }
+
+.right-box1 {
+	margin-bottom: 10px;
+}
+
+.right-box1 h4 {
+	margin-bottom: 15px;
+}
+
 
 .right-box {
 	margin-bottom: 40px;
@@ -2039,4 +2049,10 @@ table span.cross {
        height: 14px;
        text-indent: -99999px;
        cursor: pointer;
+}
+
+div#diagnosis{
+	position:absolute;
+	left:520px;
+	top:65px;
 }
